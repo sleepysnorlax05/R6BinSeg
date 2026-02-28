@@ -42,8 +42,8 @@ par(mfrow = c(1,1))
 
 # Compare default L1 and custom L1
 par(mfrow = c(1,2))
-plot(x, type = "l", main = "binSeg (L1)")
+plot(x, type = "l", main = "binSeg (custom L1)")
 abline(v = bs$predict(10), col = "red", lwd = 2)
-plot(x, type = "l", main = "binSeg (L1)")
+plot(x, type = "l", main = "binSeg (built-in L1)")
 abline(v = bs_l1$predict(10), col = "red", lwd = 2)
 par(mfrow = c(1,1))
